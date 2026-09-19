@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = df.append(new_row)
+df = pd.concat([df, new_row], ignore_index=True)
 
-for column, series in df.iteritems():
+for column, series in df.items():
     print(column)
